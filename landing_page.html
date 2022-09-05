@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="font-mono">
     <header>
         <h1>Restaurante</h1>
         <nav>
@@ -24,8 +24,8 @@
         <section id="inicio" class="bg-neutral-900 text-white">
             <div class="lg:flex ">
                 <div>
-                    <p class="ml-5 mr-2 pt-4 text-3xl  lg: text-5xl my-10 font-bold">Nombre del restaurante</p>
-                    <p class="ml-5 mt-5 mr-2 lg: text-2xl  my-10">Nos dedicamos a brindar con cada plato una mezcla de
+                    <p class="ml-5 mr-2 pt-4 text-3xl  lg:text-5xl my-10 font-bold">Sailor Scouts</p>
+                    <p class="ml-5 mt-5 mr-2 lg:text-2xl  my-10">Nos dedicamos a brindar con cada plato una mezcla de
                         sabores
                         que los
                         clientes
@@ -43,10 +43,13 @@
                 </div>
             </div>
         </section>
-        <section id="recipes" class="bg-neutral-900">
-            <h2
-                class="text-white text-4xl text-center py-10 lg:text-6xl lg:pl-20 lg:text-left md:text-6xl md:pl-20 md:text-left">
-                Nuestras recetas</h2>
+        <section id="recipes" class="bg-neutral-900 py-20">
+            <div class="flex flex-col items-center">
+                <img class="pl-4 h-10 w-16" src="/images/title.png" alt="">
+                <h2 class="text-white text-3xl font-bold pb-10 lg:text-5xl  md:text-5xl">
+                    Nuestras recetas</h2>
+
+            </div>
             <div
                 class="grid grid-cols-2 px-2 place-content-center space-x-4  lg:space-x-20 lg:justify-center lg:items-center lg:flex lg:flex-row md:justify-center md:items-center md:flex md:flex-row">
                 <div id="recipe-1" class="py-5 ml-4 flex flex-col justify-content items-center">
@@ -122,13 +125,16 @@
         </section>
         <section id="team">
             <div class="bg-neutral-900">
-                <div class="mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8 lg:py-24">
+                <div class="mx-auto max-w-7xl pb-12 px-4 sm:px-6 lg:px-8 lg:pb-24">
                     <div class="space-y-12">
-                        <div class="space-y-5 sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none ">
-                            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl sm:text-center">
+                        <div
+                            class="space-y-5 flex flex-col items-center sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none ">
+                            <img class="pl-4 h-10 w-16 " src="/images/title.png" alt="">
+                            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl text-center">
                                 Equipazo
                             </h2>
-                            <p class="text-xl text-gray-500">Entrenando el front by day y el back by night.</p>
+                            <p class="text-xl text-gray-500 text-center">Entrenando el front by day y el back by night.
+                            </p>
                         </div>
                         <ul role="list"
                             class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
