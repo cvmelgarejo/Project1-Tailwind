@@ -9,7 +9,7 @@
     <title>Document</title>
 </head>
 
-<body>
+<body class="font-mono">
     <header class="py-10 w-full h-5/6 bg-neutral-900 px-5 text-white">
             <nav class="flex justify-end space-x-4">
                 <ul><a href="">Home</a></ul>
@@ -17,84 +17,284 @@
                 <ul><a href="">Locales</a></ul>
                 <ul><a href="">Reservas</a></ul>
             </nav>
+
     </header>
-    <main>
-        <section id="inicio"></section>
-        <section id="recipes" class="mt-4 bg-neutral-900">
-            <h2
-                class="text-white text-4xl text-center py-10 lg:text-6xl lg:pl-20 lg:text-left md:text-6xl md:pl-20 md:text-left">
-                Nuestras recetas</h2>
+    <main class="">
+
+        <section id="inicio" class="bg-neutral-900 text-white">
+            <div class="lg:flex ">
+                <div>
+                    <p class="ml-5 mr-2 pt-4 text-3xl  lg:text-5xl my-10 font-bold">Sailor Scouts</p>
+                    <p class="ml-5 mt-5 mr-2 lg:text-2xl  my-10">Nos dedicamos a brindar con cada plato una mezcla de
+                        sabores
+                        que los
+                        clientes
+                        deseen
+                        volver
+                        a
+                        repetir
+                    </p>
+                    <button
+                        class=" m-5 border-2 p-2 text-lg rounded-lg hover:bg-yellow-400 hover:text-neutral-900 hover:border-neutral-900">
+                        Reservar </button>
+                </div>
+                <div>
+                    <img src="./images/restaurante.jpg" alt="foto del restaurante" class="rounded-2xl">
+                </div>
+            </div>
+        </section>
+        <section id="recipes" class="bg-neutral-900 py-20">
+            <div class="flex flex-col items-center">
+                <img class="pl-4 h-10 w-16" src="/images/title.png" alt="">
+                <h2 class="text-white text-3xl font-bold pb-10 lg:text-5xl  md:text-5xl">
+                    Nuestras recetas</h2>
+
+            </div>
             <div
-                class="grid grid-cols-2 px-20 place-content-center gap-x-4  lg:justify-center lg:items-center lg:flex lg:flex-row md:justify-center md:items-center md:flex md:flex-row">
-                <div id="recipe-1" class="py-5 flex flex-col justify-content items-center">
+                class="grid grid-cols-2 px-2 place-content-center space-x-4  lg:space-x-20 lg:justify-center lg:items-center lg:flex lg:flex-row md:justify-center md:items-center md:flex md:flex-row">
+                <div id="recipe-1" class="py-5 ml-4 flex flex-col justify-content items-center">
                     <div class="">
                         <img class="hover:contrast-50 hover:cursor-pointer" src="/images/rs1.png" alt="guiso">
                     </div>
                     <div class="mt-5 flex flex-col justify-center items-center">
-                        <h2 class="text-white mb-2 text-xl">Guiso</h2>
+                        <h2 class="text-white mb-2 text-sm lg:text-lg font-bold">Guiso</h2>
                         <div class="flex">
-                            <p class="text-white text-xl mr-2">25.000</p>
-                            <p class="text-yellow-400 text-xl">Gs</p>
+                            <p class="text-white text-sm lg:text-lg mr-2">25.000</p>
+                            <p class="text-yellow-400 text-sm lg:text-lg">Gs</p>
                         </div>
                         <div class="text-yellow-400 pt-2">&starf;&starf;&starf;&starf;&star;</div>
                     </div>
                 </div>
 
-                <div id="recipe-2" class="w-60 py-5 pb-5 flex flex-col items-center">
+                <div id="recipe-2" class="py-5 flex flex-col justify-content items-center">
                     <div class="">
                         <img class="hover:contrast-50 hover:cursor-pointer" src="/images/rs2.png" alt="fideitos">
                     </div>
                     <div class="mt-5 flex flex-col justify-center items-center">
-                        <h2 class="text-white mb-2 text-xl">Spaghettis</h2>
+                        <h2 class="text-white mb-2 text-sm lg:text-lg font-bold">Spaghettis</h2>
                         <div class="flex">
-                            <p class="text-white text-xl mr-2">18.000</p>
-                            <p class="text-yellow-400 text-xl">Gs</p>
+                            <p class="text-white text-sm lg:text-lg mr-2">18.000</p>
+                            <p class="text-yellow-400 text-sm lg:text-lg">Gs</p>
                         </div>
                         <div class="text-yellow-400 pt-2">&starf;&starf;&starf;&starf;&starf;</div>
                     </div>
                 </div>
 
-                <div id="recipe-3" class="w-60 py-5 pb-5 flex flex-col items-center">
+                <div id="recipe-3" class="py-5 flex flex-col justify-content items-center">
                     <div class="">
                         <img class="hover:contrast-50 hover:cursor-pointer" src="/images/rs3.png" alt="huevo">
                     </div>
                     <div class="mt-5 flex flex-col justify-center items-center">
-                        <h2 class="text-white mb-2 text-xl">Huevo Frito</h2>
+                        <h2 class="text-white mb-2 text-sm lg:text-lg font-bold">Huevo Frito</h2>
                         <div class="flex">
-                            <p class="text-white text-xl mr-2">10.000</p>
-                            <p class="text-yellow-400 text-xl">Gs</p>
+                            <p class="text-white text-sm lg:text-lg mr-2">10.000</p>
+                            <p class="text-yellow-400 text-sm lg:text-lg">Gs</p>
                         </div>
                         <div class="text-yellow-400 pt-2">&starf;&starf;&starf;&star;&star;</div>
                     </div>
                 </div>
 
-                <div id="recipe-4" class="w-60 py-5 pb-5 flex flex-col items-center">
+                <div id="recipe-4" class="py-5 flex flex-col justify-content items-center">
                     <div class="">
                         <img class="hover:contrast-50 hover:cursor-pointer" src="/images/rs4.png" alt="sopita">
                     </div>
                     <div class="mt-5 flex flex-col justify-center items-center">
-                        <h2 class="text-white mb-2 text-xl">Sopa de Verduras</h2>
+                        <h2 class="text-white mb-2 text-sm lg:text-xl font-bold">Sopa de Verduras</h2>
                         <div class="flex">
-                            <p class="text-white text-xl mr-2">5.000</p>
-                            <p class="text-yellow-400 text-xl">Gs</p>
+                            <p class="text-white text-sm lg:text-xl mr-2">5.000</p>
+                            <p class="text-yellow-400 text-sm lg:text-xl">Gs</p>
                         </div>
                         <div class="text-yellow-400 pt-2">&starf;&starf;&star;&star;&star;</div>
                     </div>
                 </div>
-                <div id="recipe-5" class="w-60 py-5 pb-5 flex flex-col items-center">
+                <div id="recipe-5" class="py-5 flex flex-col justify-content items-center">
                     <div class="">
                         <img class="hover:contrast-50 hover:cursor-pointer" src="/images/rs5.png" alt="guiso">
                     </div>
                     <div class="mt-5 flex flex-col justify-center items-center">
-                        <h2 class="text-white mb-2 text-xl">Croissants</h2>
+                        <h2 class="text-white mb-2 text-sm lg:text-xl font-bold">Croissants</h2>
                         <div class="flex">
-                            <p class="text-white text-xl mr-2">80.000</p>
-                            <p class="text-yellow-400 text-xl">Gs</p>
+                            <p class="text-white text-sm lg:text-xl mr-2">80.000</p>
+                            <p class="text-yellow-400 text-sm lg:text-xl">Gs</p>
                         </div>
                         <div class="text-yellow-400 pt-2">&starf;&starf;&starf;&starf;&starf;</div>
                     </div>
                 </div>
 
+            </div>
+        </section>
+        <section id="team">
+            <div class="bg-neutral-900">
+                <div class="mx-auto max-w-7xl pb-12 px-4 sm:px-6 lg:px-8 lg:pb-24">
+                    <div class="space-y-12">
+                        <div
+                            class="space-y-5 flex flex-col items-center sm:space-y-4 md:max-w-xl lg:max-w-3xl xl:max-w-none ">
+                            <img class="pl-4 h-10 w-16 " src="/images/title.png" alt="">
+                            <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl text-center">
+                                Equipazo
+                            </h2>
+                            <p class="text-xl text-gray-500 text-center">Entrenando el front by day y el back by night.
+                            </p>
+                        </div>
+                        <ul role="list"
+                            class="space-y-12 sm:grid sm:grid-cols-2 sm:gap-x-6 sm:gap-y-12 sm:space-y-0 lg:grid-cols-3 lg:gap-x-8">
+                            <li>
+                                <div class="space-y-4">
+                                    <div class="aspect-w-3 aspect-h-2">
+                                        <img class="rounded-lg object-cover shadow-lg" src="/images/clauA.jpg" alt="">
+                                    </div>
+
+                                    <div class="space-y-2">
+                                        <div class="space-y-1 text-lg font-medium leading-6">
+                                            <h3 class="text-white">Claudia Achucarro</h3>
+                                            <p class="text-yellow-400">Front-end Developer</p>
+                                        </div>
+                                        <ul role="list" class="flex space-x-5">
+                                            <li>
+                                                <a href="#" class="text-gray-400 hover:text-gray-500">
+                                                    <span class="sr-only">Twitter</span>
+                                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                        aria-hidden="true">
+                                                        <path
+                                                            d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="text-gray-400 hover:text-gray-500">
+                                                    <span class="sr-only">LinkedIn</span>
+                                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                        aria-hidden="true">
+                                                        <path fill-rule="evenodd"
+                                                            d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="space-y-4">
+                                    <div class="aspect-w-3 aspect-h-2">
+                                        <img class="rounded-lg object-cover shadow-lg" src="/images/ivana.jpg" alt="">
+                                    </div>
+
+                                    <div class="space-y-2">
+                                        <div class="space-y-1 text-lg font-medium leading-6">
+                                            <h3 class="text-white">Ivana Mellone</h3>
+                                            <p class="text-yellow-400">Front-end Developer</p>
+                                        </div>
+                                        <ul role="list" class="flex space-x-5">
+                                            <li>
+                                                <a href="https://twitter.com/MelloneIvana"
+                                                    class="text-gray-400 hover:text-gray-500">
+                                                    <span class="sr-only">Twitter</span>
+                                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                        aria-hidden="true">
+                                                        <path
+                                                            d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/ivana-mellone-chamorro-88a62b243/"
+                                                    class="text-gray-400 hover:text-gray-500">
+                                                    <span class="sr-only">LinkedIn</span>
+                                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                        aria-hidden="true">
+                                                        <path fill-rule="evenodd"
+                                                            d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="space-y-4">
+                                    <div class="aspect-w-3 aspect-h-2">
+                                        <img class="rounded-lg object-cover shadow-lg h-1/2"
+                                            src="/images/cvmelgarejo.jpg" alt="">
+                                    </div>
+
+                                    <div class="space-y-2">
+                                        <div class="space-y-1 text-lg font-medium leading-6">
+                                            <h3 class="text-white">Claudia Melgarejo</h3>
+                                            <p class="text-yellow-400">Front-end Developer</p>
+                                        </div>
+                                        <ul role="list" class="flex space-x-5">
+                                            <li>
+                                                <a href="https://twitter.com/cvmelgarejo"
+                                                    class="text-gray-400 hover:text-gray-500">
+                                                    <span class="sr-only">Twitter</span>
+                                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                        aria-hidden="true">
+                                                        <path
+                                                            d="M6.29 18.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0020 3.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.073 4.073 0 01.8 7.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 010 16.407a11.616 11.616 0 006.29 1.84" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                            <li>
+                                                <a href="https://www.linkedin.com/in/cvmelgarejo/"
+                                                    class="text-gray-400 hover:text-gray-500">
+                                                    <span class="sr-only">LinkedIn</span>
+                                                    <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 20 20"
+                                                        aria-hidden="true">
+                                                        <path fill-rule="evenodd"
+                                                            d="M16.338 16.338H13.67V12.16c0-.995-.017-2.277-1.387-2.277-1.39 0-1.601 1.086-1.601 2.207v4.248H8.014v-8.59h2.559v1.174h.037c.356-.675 1.227-1.387 2.526-1.387 2.703 0 3.203 1.778 3.203 4.092v4.711zM5.005 6.575a1.548 1.548 0 11-.003-3.096 1.548 1.548 0 01.003 3.096zm-1.337 9.763H6.34v-8.59H3.667v8.59zM17.668 1H2.328C1.595 1 1 1.581 1 2.298v15.403C1 18.418 1.595 19 2.328 19h15.34c.734 0 1.332-.582 1.332-1.299V2.298C19 1.581 18.402 1 17.668 1z"
+                                                            clip-rule="evenodd" />
+                                                    </svg>
+                                                </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- More people... -->
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews" class="bg-neutral-900 w-full px-4">
+            <div class="pt-16 lg:py-24">
+                <div class="bg-yellow-400 pb-16 lg:relative lg:z-10 lg:pb-0">
+                    <div class="lg:mx-auto lg:grid lg:max-w-7xl lg:grid-cols-3 lg:gap-8 lg:px-8">
+                        <div class="relative lg:-my-8">
+                            <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:h-full lg:p-0 ">
+                                <div
+                                    class="aspect-w-10 aspect-h-6 overflow-hidden rounded-xl sm:aspect-w-16 sm:aspect-h-7 lg:aspect-none lg:h-full flex justify-center sm:pt-8">
+                                    <img class="object-cover h-1/2 w-1/2 lg:h-full lg:w-full rounded-xl"
+                                        src="./images/cliente.jpg" alt="foto de cliente">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mt-12 lg:col-span-2 lg:m-0 lg:pl-8">
+                            <div class="mx-auto max-w-md px-4 sm:max-w-2xl sm:px-6 lg:max-w-none lg:px-0 lg:py-20">
+                                <blockquote>
+                                    <div>
+                                        <svg class="h-12 w-12 text-neutral-900 opacity-60" fill="currentColor"
+                                            viewBox="0 0 32 32" aria-hidden="true">
+                                            <path
+                                                d="M9.352 4C4.456 7.456 1 13.12 1 19.36c0 5.088 3.072 8.064 6.624 8.064 3.36 0 5.856-2.688 5.856-5.856 0-3.168-2.208-5.472-5.088-5.472-.576 0-1.344.096-1.536.192.48-3.264 3.552-7.104 6.624-9.024L9.352 4zm16.512 0c-4.8 3.456-8.256 9.12-8.256 15.36 0 5.088 3.072 8.064 6.624 8.064 3.264 0 5.856-2.688 5.856-5.856 0-3.168-2.304-5.472-5.184-5.472-.576 0-1.248.096-1.44.192.48-3.264 3.456-7.104 6.528-9.024L25.864 4z" />
+                                        </svg>
+                                        <p class="mt-6 text-2xl font-medium text-neutral-900">Lo mejor a destacar es la
+                                            atencion brindada por todo el personal, la comida excelente a tiempo y
+                                            deliciosa. Buen ambiente y todo a punto </p>
+                                    </div>
+                                    <footer class="mt-6">
+                                        <p class="text-base font-medium text-neutral-900">Mayra Gomez</p>
+                                        <p class="text-base font-medium text-neutral-900">Cliente de Sailor Scouts</p>
+                                    </footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
